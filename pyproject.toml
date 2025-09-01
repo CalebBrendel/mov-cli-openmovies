@@ -1,0 +1,18 @@
+[project]
+name = "mov-cli-openmovies"
+version = "0.1.0"
+description = "A mov-cli v4 plugin that scrapes a configurable, free-to-watch catalog (defaults to Blender open movies / public demo MP4s)."
+authors = [{ name = "You" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = [
+  "requests>=2.31.0",
+  "lxml>=5.1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/mov-cli-openmovies"
+
+[tool.setuptools.packages.find]
+include = ["mov_cli_openmovies*"]
